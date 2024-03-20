@@ -1,0 +1,169 @@
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: url(images/fondo.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo-container{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.encabezado h1{
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5em;
+    margin-top: 50px;
+}
+
+.encabezado h3{
+    position: absolute;
+    top: 30px; 
+    right: 273px;
+    margin-top: 80px;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.contenedor-cuerpo{
+    width: 1600px;
+    margin: 0 auto; 
+    margin-top: 20px;  
+}
+
+.contenedor-copiar {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.copiar, .ingresar {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px);
+    margin-right: 63px;
+}
+
+.contenedor-encriptar{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.copiar{
+    width: 45%;  
+}
+
+.ingresar{
+    width: 45%; 
+}
+
+textarea {
+    resize: none;
+    display: block;
+    height: 500px;
+    width: 99%;
+    font-size: 25px;
+    border: none;
+    background: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+p{
+    text-align: left;
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #872B8D;
+    color: white;
+    font-family: "Madimi One", sans-serif;
+    transition: 1.5s all;
+    cursor: pointer;  
+}
+
+button:hover{
+    background: #60EEE3;
+    color: black;
+}
+
+.contenedor-copiar, .contenedor-encriptar {
+    text-align: center;
+}
+
+.boton-desencriptar {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .encabezado h1 {
+        position: static;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    .encabezado h3 {
+        position: static;
+        font-size: 1.5em;
+        margin-top: 30px;
+        right: auto;
+        text-align: center;
+    }
+
+    .contenedor-cuerpo {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .copiar, .ingresar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 300px;
+        font-size: 20px;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

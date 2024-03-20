@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR Y DESENCRIPTADOR</title>
+    <link rel="stylesheet" href="reset.css"></link>
+    <link rel="stylesheet" href="estilosEncriptador.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <div class="logo-container">
+                <img class="logo" src="images/unicornio.png" alt="imagen de un unicornio programando">
+                <h1>Encriptador y Desencriptador</h1>
+                <h3>Noelia Alejandra Amaya Cardenas</h3>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor-cuerpo">
+        <section class="copiar">
+            <div class="contenedor-copiar">
+                <textarea class="texto-copiar" name="textarea" rows="10" cols="50"></textarea>
+                <button class="boton-copiar" onclick="copiarTexto()">Copiar texto</button>
+            </div>
+        </section>
+
+        <section class="ingresar">
+            <div class="contenedor-encriptar">
+                <textarea class="ingresar-texto" name="textarea" rows="10" cols="50" placeholder="Ingrese el texto que desea encriptar o desencriptar !"></textarea>
+                <p>El texto que ingrese debe ser en minuscula y no deben haber letras con acentos ni caracteres especiales</p>
+                <button class="boton-encriptar" onclick="encriptarYMostrar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="desencriptarYMostrar()">Desencriptar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="logica.js"></script>
+
+</body>
+</html>
+
